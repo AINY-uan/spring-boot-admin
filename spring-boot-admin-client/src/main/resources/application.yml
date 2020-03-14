@@ -1,0 +1,24 @@
+server:
+  port: 8768
+
+spring:
+  application:
+    name: Client-A
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8769
+        username: admin
+        password: admin
+        instance:
+          service-base-url: http://127.0.0.1:8768
+          name: Client
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS

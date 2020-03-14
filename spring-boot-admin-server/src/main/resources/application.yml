@@ -1,0 +1,23 @@
+server:
+  port: 8769
+
+spring:
+  application:
+    name: Admin-Server
+  security:
+    user:
+      name: "admin"
+      password: "admin"
+  mail:
+    host: smtp.mxhichina.com
+    username: dong.yuan@palmaplus.com
+    password: your password
+    port: 465
+    default-encoding: UTF-8
+    protocol: smtps
+  boot:
+    admin:
+      notify:
+        mail:
+          to: 1819341878@qq.com
+          from: dong.yuan@palmaplus.com
